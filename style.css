@@ -111,3 +111,26 @@ background-image: url(./images/img.png);
 .deleteBtn:active {
     transform: scale(1.05);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:576px){
+    .cards{
+        min-height: 200px;
+        margin-top: 150px !important;
+        width: 90%;
+    }
+}
