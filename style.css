@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg: #F5F0E8;
+    --card: #DDE5D5;
+    --light: rgb(139, 161, 130);
+    --dark: #344438;
+}
+
+@font-face {
+    font-family: "flora";
+    src: url("./fonts/Floraison\ des\ Amours.ttf");
+}
+@font-face {
+    font-family: "poppin";
+    src: url("./fonts/Poppins-Medium.ttf");
+}
+
+body {
+    background-color: var(--bg);
+background-image: url(./images/img.png);
+}
+
+.cards {
+    border: 1px solid var(--dark);
+    background-color: var(--card) !important;
+    background-image: url(./images/card\ bg.png);
+    min-height: 500px;
+    height: auto;
+}
+
+.heading {
+    font-family: flora;
+    font-size: 56px;
+    color: var(--dark);
+}
+
+.input {
+    outline: none;
+    border: 2px solid var(--dark);
+
+    background-color: var(--bg);
+}
+
+#addBtn {
+    outline: none;
+    background-color: var(--bg);
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    padding: 0px 10px;
+    transition: transform 0.2s ease;
+    font-family: poppin;
+}
+
+#addBtn:active {
+    transform: scale(1.05);
+}
+
+#taskList li {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 8px;
+
+}
+
+
+
+#taskList li span {
+    color: var(--dark);
+     flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    font-family: poppin;
+
+}
+
+.editBtn {
+
+    outline: none;
+    background-color: var(--bg);
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    padding: 0px 10px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    transition: transform 0.2s ease;
+    font-family: poppin;
+}
+
+.editBtn:active {
+    transform: scale(1.05);
+}
+
+.deleteBtn {
+    outline: none;
+        background-color: var(--bg);
+    border: 2px solid var(--dark);
+    color: var(--dark);
+    padding: 0px 10px;
+    flex-shrink: 0;
+    align-self: flex-start;
+    transition: transform 0.2s ease;
+    font-family: poppin;
+}
+
+.deleteBtn:active {
+    transform: scale(1.05);
+}

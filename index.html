@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="card cards mx-auto mt-5" style="max-width: 500px">
+  <div class="card-body" >
+   
+    <div class="d-flex flex-column gap-4" id="taskContainer">
+
+        <h1 class="heading text-center">My Todo List</h1>
+
+<div class="d-flex gap-3 justify-content-center">
+    <input type="text" class="input" placeholder="Enter task..." id="addTask">
+<button id="addBtn" >Add</button>
+</div>
+    </div>
+    <br/>
+
+    <ul id="taskList" class="p-0">
+
+    </ul>
+  </div>
+</section>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
